@@ -6,8 +6,6 @@ function readFromConsole($message = '', $input = null)
 
 	if (!$input) { $input = trim(fgets(STDIN));}
 
-	// обработка данных
-
 	if ($input === 'true') { return true;}
 
 	else if ($input === 'false') { return false;}
