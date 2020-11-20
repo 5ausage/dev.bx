@@ -26,13 +26,13 @@ $ExpectedResult =
 		 '1st file.php' => [
 			 'is_readable' => true,
 			 'is_writable' => true,
-			 'size' => 6,
+			 'size' => 7,
 		 ],
 
 		 '2d file.php' => [
 			 'is_readable' => true,
 			 'is_writable' => true,
-			 'size' => 2098,
+			 'size' => 2121,
 		 ],
 	 ],
 
