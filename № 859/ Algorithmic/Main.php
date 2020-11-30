@@ -2,7 +2,7 @@
 
 require('Classes.php');
 require('Checking.php');
-require('Test for Check.php');
+require('Test for Checking.php');
 
 
 echo PHP_EOL.'TDD #1 - 2 2 6 2'.PHP_EOL;
