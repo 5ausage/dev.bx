@@ -2,7 +2,7 @@
 
 require('Counting.php');
 require('Console Reading.php');
-require('TDD for Counting.php');
+require('Test for Counting.php');
 
 
 echo PHP_EOL.'TDD #1 - Введите через Enter 1 3 3 1 , затем stop:'.PHP_EOL;
