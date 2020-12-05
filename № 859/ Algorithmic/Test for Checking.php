@@ -1,32 +1,36 @@
 <?php
 
-function Checking_Testing($Input)
+function checkingTesting($input)
 {
-	if ($Input == 1)
+	if ($input == 1)
 	{
-		$Result = Check();
-		$ExpectedResult = 'ДА';
-		if($Result === $ExpectedResult) return 'passed'; else return 'failed';
+		$result = check();
+		$expectedResult = 'ДА';
+		if ($result === $expectedResult) return 'passed';
+		else return 'failed';
 	}
 
-	if ($Input == 2)
+	if ($input == 2)
 	{
-		$Result = Check();
-		$ExpectedResult = 'ДА';
-		if($Result === $ExpectedResult) return 'passed'; else return 'failed';
+		$result = check();
+		$expectedResult = 'ДА';
+		if ($result === $expectedResult) return 'passed';
+		else return 'failed';
 	}
 
-	if ($Input == 3)
+	if ($input == 3)
 	{
-		$Result = Check();
-		$ExpectedResult = 'НЕТ';
-		if($Result === $ExpectedResult) return 'passed'; else return 'failed';
+		$result = check();
+		$expectedResult = 'НЕТ';
+		if ($result === $expectedResult) return 'passed';
+		else return 'failed';
 	}
 
-	if ($Input == 4)
+	if ($input == 4)
 	{
-		$Result = Check();
-		$ExpectedResult = 'ДА';
-		if($Result === $ExpectedResult) return 'passed'; else return 'failed';
+		$result = check();
+		$expectedResult = 'ДА';
+		if ($result === $expectedResult) return 'passed';
+		else return 'failed';
 	}
 }

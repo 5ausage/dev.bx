@@ -1,28 +1,28 @@
 <?php
 
-abstract class Chess_Figure
+abstract class ChessFigure
 {
-	protected $Pos_X = 0, $Pos_Y = 0;
+	protected $posX = 0, $posY = 0;
 
-	public function SetPos_X(int $x)
+	public function setPosX(int $x)
 	{
-		$this->Pos_X = $x;
+		$this -> posX = $x;
 	}
 
-	public function SetPos_Y(int $y)
+	public function setPosY(int $y)
 	{
-		$this->Pos_Y = $y;
+		$this -> posY = $y;
 	}
 
-	abstract public function Check(int $x, int $y);
+	abstract public function check(int $x, int $y);
 }
 
-class Rook extends Chess_Figure
+class Rook extends ChessFigure
 {
-	public function Check(int $x, int $y) : bool
-
+	public function check(int $x, int $y) : bool
 	{
-		if ($x === $this->Pos_X or $y === $this->Pos_Y){
+		if ($x === $this -> posX or $y === $this -> posY)
+		{
 			return true;
 		}
 		return false;
