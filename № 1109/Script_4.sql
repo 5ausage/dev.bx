@@ -6,5 +6,6 @@ FROM book_store bs
        INNER JOIN store s on bs.STORE_ID = s.ID
 WHERE b.PUBLISHER_ID = 3
 GROUP BY s.CITY, b.NAME;
+
 /* Вывести среднюю стоимость книг издательства «Азбука» в каждом магазине.
    Столбцы ответа: Город, Название книги, средняя стоимость. */
