@@ -3,4 +3,6 @@ SELECT b.NAME,
 FROM book_store bs
        INNER JOIN book b on bs.BOOK_ID = b.ID
 WHERE b.PUBLISHER_ID = 3
-GROUP BY b.NAME; /* 3-е задание */
+GROUP BY b.NAME;
+/* Вывести среднюю стоимость книг издательства «Азбука».
+   Столбцы ответа: Название книги, средняя стоимость. */
