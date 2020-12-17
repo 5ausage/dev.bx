@@ -5,19 +5,30 @@ $str = trim(fgets(STDIN));
 
 $a = explode(' ', $str);
 
-for($j = 0, $i = 0; $i < count($a); $i++)
+function no_pair(array $x)
 {
-	for($j = 0; $j < count($a); $j++)
+	for($i = 0; $i < count($x); $i++)
 	{
-		if($i != $j && $a[$i] == $a[$j])
+		for($j = 0; $j < count($x); $j++)
 		{
-			break;
+			if($i != $j && $x[$i] == $x[$j])
+			{
+				break;
+			}
 		}
-	}
-	if($j == count($a))
-	{
-		echo $a[$i].' ';
+		if($j == count($x))
+		{
+			return $x[$i];
+		}
 	}
 }
 
-/*https://trycode.pw/c/UJWBN*/
+$result = no_pair($a);
+echo $result;
+
+/*
+(A6) Дан массив (последовтельных чисел) с нечетным числом элементов, содержащий все значения парные, кроме одного.
+Напишите функцию, которая найдет число без пары.
+
+https://trycode.pw/c/UJWBN
+*/
